@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CAPMA</string>
+    <string name="google_places_api_key">?</string>
+    <string name="openai_api_key">?</string>
+    <!-- Default server URL, can be configured in Settings -->
+    <string name="agent_api_url">http://100.78.90.55:5800</string>
+</resources>

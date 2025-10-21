@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.NotesActivity">
+
+    <EditText
+        android:id="@+id/editTextNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter note text"
+        android:inputType="textMultiLine"
+        android:minLines="2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <ImageButton
+            android:id="@+id/buttonAdd"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/icon_button_background"
+            android:contentDescription="Add note"
+            android:padding="12dp"
+            android:src="@drawable/ic_add"
+            app:tint="?attr/colorPrimary" />
+
+        <ImageButton
+            android:id="@+id/buttonUpdate"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/icon_button_background"
+            android:contentDescription="Update note"
+            android:enabled="false"
+            android:padding="12dp"
+            android:src="@drawable/ic_save"
+            app:tint="?attr/colorPrimary" />
+
+        <ImageButton
+            android:id="@+id/buttonCancel"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/icon_button_background"
+            android:contentDescription="Cancel editing"
+            android:enabled="false"
+            android:padding="12dp"
+            android:src="@drawable/ic_cancel"
+            app:tint="?attr/colorError" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewNotes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1" />
+
+</LinearLayout> 
