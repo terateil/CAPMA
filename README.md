@@ -1,8 +1,6 @@
 # CAPMA - Context-Aware Personalized Mobile Agent
 
-This repository contains the source code of our android application.
-
-This Android application demonstrates context-aware perception using multiple sensing modalities:
+This repository contains the source code of our android application, that demonstrates context-aware perception using multiple sensing modalities:
 
 1. **Activity Recognition** - Detects user activities (walking, running, etc.)
 2. **Places API** - Determines the user's location context
@@ -61,3 +59,4 @@ The app is structured into modular components:
 - `AudioRecorder`: Handles audio recording and amplitude measurement
 
 - `WhisperApiClient`: Handles API communication with OpenAI's Whisper service 
+
