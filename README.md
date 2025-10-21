@@ -5,6 +5,7 @@ This repository contains the source code of our android application, that demons
 1. **Activity Recognition** - Detects user activities (walking, running, etc.)
 2. **Places API** - Determines the user's location context
 3. **Audio Recording** - Records ambient audio and processes it using OpenAI's Whisper API
+4. **User Preference Data Retrieval** - Searches for most relevant item in the user's preference list, matching the instruction given.
 
 ## Setup Instructions
 
@@ -59,4 +60,5 @@ The app is structured into modular components:
 - `AudioRecorder`: Handles audio recording and amplitude measurement
 
 - `WhisperApiClient`: Handles API communication with OpenAI's Whisper service 
+
 
